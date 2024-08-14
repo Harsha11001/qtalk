@@ -1,0 +1,30 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('clean') {
+            steps {
+                echo 'clean successful'
+            }
+        }
+    
+        stage('validate') {
+            steps {
+                echo 'validate successful'
+            }
+        }
+    
+        stage('compile') {
+            steps {
+                echo 'compile successful'
+            }
+        }
+    
+        stage('test') {
+            steps {
+                echo 'test successful'
+            }
+        }
+    }
+  
+}
